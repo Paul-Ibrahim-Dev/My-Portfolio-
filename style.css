@@ -88,6 +88,17 @@ a {
   color: #ffffff;
 }
 
+.btn-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #2a2f4d;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -136,6 +147,9 @@ a {
   user-select: none;
 }
 
+/* ============================================
+   GLASS CARD — frosted panel behind the portrait
+   ============================================ */
 .glass-card {
   position: absolute;
   top: 10px;
@@ -175,6 +189,9 @@ a {
   border-radius: 170px 170px 24px 24px;
 }
 
+/* ============================================
+   ORBITING LABELS — small "planetary body" chips
+   ============================================ */
 .floating-label {
   position: absolute;
   z-index: 4;
@@ -187,7 +204,6 @@ a {
   color: #ffffff;
   white-space: nowrap;
 
-  /* the "cut corner" facet */
   clip-path: polygon(14% 0%, 100% 0%, 100% 86%, 86% 100%, 0% 100%, 0% 14%);
   border-radius: 10px;
 
@@ -209,7 +225,6 @@ a {
   flex-shrink: 0;
 }
 
-/* each label = its own "planet" color, gradient lit from top-left */
 .label-1 {
   background: radial-gradient(circle at 30% 30%, #9d9dfc 0%, #4f4cf0 55%, #2a2f8f 100%);
 }
@@ -259,7 +274,7 @@ a {
 }
 
 .about-preview {
-  padding: 64px 0 96px;
+  padding: 64px 0 80px;
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 32px;
@@ -284,6 +299,128 @@ a {
   line-height: 1.45;
   max-width: 640px;
 }
+
+.about-substatement {
+  font-size: 14px;
+  color: #6b7086;
+  margin-top: 16px;
+}
+
+/* ============================================
+   PROJECTS / WORKS
+   ============================================ */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #9a9fb0;
+  margin-bottom: 12px;
+}
+
+.dot-icon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3b5bfd;
+  display: inline-block;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.projects {
+  padding: 40px 0 80px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background: #141833;
+  border: 1px solid #232748;
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #9a9fb0;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: #c7cad6;
+  background: #1c2140;
+  border: 1px solid #2a2f4d;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+/* ============================================
+   SKILLS / STACK
+   ============================================ */
+.skills {
+  padding: 40px 0 96px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.skills-col {
+  background: #141833;
+  border: 1px solid #232748;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.skills-col-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
 .footer {
   display: flex;
   align-items: center;
@@ -308,4 +445,6 @@ a {
   .headline { font-size: 40px; }
   .about-preview { grid-template-columns: 1fr; }
   .nav-links { display: none; }
+  .project-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
 }

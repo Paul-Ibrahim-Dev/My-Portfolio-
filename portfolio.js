@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let lastTime = performance.now();
 
   function animate(now) {
-    const delta = (now - lastTime) / 1000; 
+    const delta = (now - lastTime) / 1000;
     lastTime = now;
     elapsed += delta;
 
